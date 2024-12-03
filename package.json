@@ -7,12 +7,22 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "react": "^18.3.1",
+    "react-avatar": "^5.0.3",
     "react-dom": "^18.3.1",
     "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
+    "react-simple-wysiwyg": "^3.2.0",
+    "react-use-websocket": "^4.10.1",
+    "reactstrap": "^9.2.3",
+    "serve-handler": "^6.1.6",
+    "socket.io-client": "^4.8.1",
+    "uuid": "^11.0.3",
+    "web-vitals": "^2.1.4",
+    "ws": "^8.18.0"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "concurrently \"npm run react\" \"npm run server\"",
+    "react": "react-scripts start --host 0.0.0.0",
+    "server": "node src/server.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -34,5 +44,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0",
+    "prettier": "^3.3.3"
   }
 }

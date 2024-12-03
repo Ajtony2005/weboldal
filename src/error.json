@@ -1,0 +1,6 @@
+[
+  { "code": 100, "message": "Elfogyott a víz" },
+  { "code": 101, "message": "Elfogyott a citromlé" },
+  { "code": 102, "message": "Elfogyott a cukor" },
+  { "code": 103, "message": "Elfogyott a tea filter" }
+]

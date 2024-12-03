@@ -1,0 +1,132 @@
+.container {
+  max-width: 600px;
+  margin: 200px auto;
+  padding: 25px;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 50vh;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.status {
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.status.connected {
+  background-color: #e0ffe0;
+  color: #2d7a2d;
+}
+
+.status.error {
+  background-color: #ffe0e0;
+  color: #a12d2d;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.progress-circle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+input-group {
+  margin-bottom: 10px;
+}
+
+button:disabled {
+  background-color: #ddd;
+}
+
+.status {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.status.error {
+  color: red;
+}
+
+.status.connected {
+  color: green;
+}
+
+.reset-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.reset-button:hover {
+  background-color: #2d7a2d;
+}
+
+.reset-button:focus {
+  outline: none;
+}
+
+.reset-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.error-display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* A teljes magasság */
+}
+
+svg {
+  display: block; /* Biztosítja, hogy a margin ne okozzon problémát */
+}
